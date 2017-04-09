@@ -1,4 +1,4 @@
-name = raw_input("Enter file:")
+name = input("Enter file:")
 if len(name) < 1 : name = "mbox-short.txt"
 handle = open(name)
 hourcount=dict()
@@ -14,4 +14,4 @@ for line in handle:
 sorthour=sorted([(k,v) for k,v in hourcount.items()])            
 
 for key,val in sorthour:
-    print key, val
+    print (key, val)
